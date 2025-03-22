@@ -169,8 +169,7 @@ async function middleBodyUpdate() {
       }
     });
 
-    // Fix: Use `middleBodyDescriptions` instead of `middleBodyTitles`
-    middleBodyDescriptions.forEach((title, index) => {
+    middleBodyTitles.forEach((title, index) => {
       if (middleBodyDescriptions[index]) {
         title.textContent = middleBodyDescriptions[index];
       }
