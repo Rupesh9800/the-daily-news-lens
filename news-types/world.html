@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>world-news</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.3.4/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bd-header py-3 d-flex align-items-stretch">
+      <div class="container-fluid d-flex align-items-center">
+        <h1 class="d-flex align-items-center fs-4 text-white mb-2 company-logo">
+          <img
+            src="../news-logo.png"
+            width="100"
+            height="80"
+            class="me-3 img-logo"
+            alt="World News Logo"
+          />
+          The Daily News Lens
+        </h1>
+        <!-- Social Media Links -->
+        <div class="ms-auto mb-3 social-icons">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            class="me-2 text-black fs-4"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            class="me-2 text-black fs-4"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            class="me-2 text-black fs-4"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            class="me-2 text-black fs-4"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <!-- news-options -->
+    <div class="nav-scroller">
+      <nav class="nav-container">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="/news-types/world.html" class="nav-link">World News</a>
+        <a href="/news-types/business.html" class="nav-link">Business</a>
+        <a href="/news-types/sports.html" class="nav-link">Sports</a>
+        <a href="/news-types/entertainment.html" class="nav-link"
+          >Entertainment</a
+        >
+      </nav>
+    </div>
+
+    <!-- Weather -->
+
+    <div class="weat-slide" id="business-section1">
+      <div class="today-weath mt-2">
+        <p id="weather-info" class="hel">Loading weather...</p>
+      </div>
+    </div>
+    <!-- Top World News Heading Bar -->
+    <div class="heading-bar">
+      <h2>🌍 Top World News</h2>
+    </div>
+
+    <!-- middle-body -->
+    <div class="middle-body my-2">
+      <div class="container">
+        <div class="row">
+          <!-- Row 2 -->
+          <div class="col-md-4 middle-body-card">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://d.latintimes.com/en/full/571807/measles-texas.jpg"
+                class="card-img-bottom middle-body-img"
+                alt="Thumbnail"
+              />
+              <div class="card-body middle-body-card-color">
+                <p class="mb-0 middle-body-desc">
+                  The parents of a Texas child who died from measles appeared in
+                  a video formulated by an anti-vaccine group where they
+                  continued to push against vaccines.
+                </p>
+                <strong
+                  class="d-inline-block mb-2 text-secondary-emphasis middle-body-name"
+                  >CNN</strong
+                >
+                <div class="mb-1 text-body-secondary middle-body-date">
+                  Nov 16
+                </div>
+                <a href="#" class="stretched-link middle-body-link"
+                  >Continue reading →</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 middle-body-card">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://d.latintimes.com/en/full/571807/measles-texas.jpg"
+                class="card-img-bottom middle-body-img"
+                alt="Thumbnail"
+              />
+              <div class="card-body middle-body-card-color">
+                <p class="mb-0 middle-body-desc">
+                  The parents of a Texas child who died from measles appeared in
+                  a video formulated by an anti-vaccine group where they
+                  continued to push against vaccines.
+                </p>
+                <strong
+                  class="d-inline-block mb-2 text-secondary-emphasis middle-body-name"
+                  >CNN</strong
+                >
+                <div class="mb-1 text-body-secondary middle-body-date">
+                  Nov 16
+                </div>
+                <a href="#" class="stretched-link middle-body-link"
+                  >Continue reading →</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 middle-body-card">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://d.latintimes.com/en/full/571807/measles-texas.jpg"
+                class="card-img-bottom middle-body-img"
+                alt="Thumbnail"
+              />
+              <div class="card-body middle-body-card-color">
+                <p class="mb-0 middle-body-desc">
+                  The parents of a Texas child who died from measles appeared in
+                  a video formulated by an anti-vaccine group where they
+                  continued to push against vaccines.
+                </p>
+                <strong
+                  class="d-inline-block mb-2 text-secondary-emphasis middle-body-name"
+                  >CNN</strong
+                >
+                <div class="mb-1 text-body-secondary middle-body-date">
+                  Nov 16
+                </div>
+                <a href="#" class="stretched-link middle-body-link"
+                  >Continue reading →</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 middle-body-card">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://d.latintimes.com/en/full/571807/measles-texas.jpg"
+                class="card-img-bottom middle-body-img"
+                alt="Thumbnail"
+              />
+              <div class="card-body middle-body-card-color">
+                <p class="mb-0 middle-body-desc">
+                  The parents of a Texas child who died from measles appeared in
+                  a video formulated by an anti-vaccine group where they
+                  continued to push against vaccines.
+                </p>
+                <strong
+                  class="d-inline-block mb-2 text-secondary-emphasis middle-body-name"
+                  >CNN</strong
+                >
+                <div class="mb-1 text-body-secondary middle-body-date">
+                  Nov 16
+                </div>
+                <a href="#" class="stretched-link middle-body-link"
+                  >Continue reading →</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 middle-body-card">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://d.latintimes.com/en/full/571807/measles-texas.jpg"
+                class="card-img-bottom middle-body-img"
+                alt="Thumbnail"
+              />
+              <div class="card-body middle-body-card-color">
+                <p class="mb-0 middle-body-desc">
+                  The parents of a Texas child who died from measles appeared in
+                  a video formulated by an anti-vaccine group where they
+                  continued to push against vaccines.
+                </p>
+                <strong
+                  class="d-inline-block mb-2 text-secondary-emphasis middle-body-name"
+                  >CNN</strong
+                >
+                <div class="mb-1 text-body-secondary middle-body-date">
+                  Nov 16
+                </div>
+                <a href="#" class="stretched-link middle-body-link"
+                  >Continue reading →</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 middle-body-card">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://d.latintimes.com/en/full/571807/measles-texas.jpg"
+                class="card-img-bottom middle-body-img"
+                alt="Thumbnail"
+              />
+              <div class="card-body middle-body-card-color">
+                <p class="mb-0 middle-body-desc">
+                  The parents of a Texas child who died from measles appeared in
+                  a video formulated by an anti-vaccine group where they
+                  continued to push against vaccines.
+                </p>
+                <strong
+                  class="d-inline-block mb-2 text-secondary-emphasis middle-body-name"
+                  >CNN</strong
+                >
+                <div class="mb-1 text-body-secondary middle-body-date">
+                  Nov 16
+                </div>
+                <a href="#" class="stretched-link middle-body-link"
+                  >Continue reading →</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 middle-body-card">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://d.latintimes.com/en/full/571807/measles-texas.jpg"
+                class="card-img-bottom middle-body-img"
+                alt="Thumbnail"
+              />
+              <div class="card-body middle-body-card-color">
+                <p class="mb-0 middle-body-desc">
+                  The parents of a Texas child who died from measles appeared in
+                  a video formulated by an anti-vaccine group where they
+                  continued to push against vaccines.
+                </p>
+                <strong
+                  class="d-inline-block mb-2 text-secondary-emphasis middle-body-name"
+                  >CNN</strong
+                >
+                <div class="mb-1 text-body-secondary middle-body-date">
+                  Nov 16
+                </div>
+                <a href="#" class="stretched-link middle-body-link"
+                  >Continue reading →</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 middle-body-card">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://d.latintimes.com/en/full/571807/measles-texas.jpg"
+                class="card-img-bottom middle-body-img"
+                alt="Thumbnail"
+              />
+              <div class="card-body middle-body-card-color">
+                <p class="mb-0 middle-body-desc">
+                  The parents of a Texas child who died from measles appeared in
+                  a video formulated by an anti-vaccine group where they
+                  continued to push against vaccines.
+                </p>
+                <strong
+                  class="d-inline-block mb-2 text-secondary-emphasis middle-body-name"
+                  >CNN</strong
+                >
+                <div class="mb-1 text-body-secondary middle-body-date">
+                  Nov 16
+                </div>
+                <a href="#" class="stretched-link middle-body-link"
+                  >Continue reading →</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 middle-body-card">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://d.latintimes.com/en/full/571807/measles-texas.jpg"
+                class="card-img-bottom middle-body-img"
+                alt="Thumbnail"
+              />
+              <div class="card-body middle-body-card-color">
+                <p class="mb-0 middle-body-desc">
+                  The parents of a Texas child who died from measles appeared in
+                  a video formulated by an anti-vaccine group where they
+                  continued to push against vaccines.
+                </p>
+                <strong
+                  class="d-inline-block mb-2 text-secondary-emphasis middle-body-name"
+                  >CNN</strong
+                >
+                <div class="mb-1 text-body-secondary middle-body-date">
+                  Nov 16
+                </div>
+                <a href="#" class="stretched-link middle-body-link"
+                  >Continue reading →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div>
+        <span class="mb-3">© 2024 Company, Inc</span>
+      </div>
+
+      <div class="col-md-5">
+        <form>
+          <h2 class="col_head">Subscribe to our newsletter</h2>
+          <p class="col_head_p">
+            Monthly digest of what's new and exciting from us.
+          </p>
+          <div class="d-flex">
+            <label for="newsletter1" class="visually-hidden"
+              >Email address</label
+            >
+            <input
+              id="newsletter1"
+              type="text"
+              class="form-control"
+              placeholder="Email address"
+            />
+            <button class="btn_sub" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="world-news-types.js"></script>
+  </body>
+</html>
