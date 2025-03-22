@@ -21,64 +21,12 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.3.4/dist/axios.min.js"></script>
   </head>
   <body>
-    <!-- Header -->
-    <header class="bd-header py-3 d-flex align-items-stretch">
-      <div class="container-fluid d-flex align-items-center">
-        <h1 class="d-flex align-items-center fs-4 text-white mb-2 company-logo">
-          <img
-            src="../news-logo.png"
-            width="100"
-            height="80"
-            class="me-3 img-logo"
-            alt="World News Logo"
-          />
-          The Daily News Lens
-        </h1>
-        <!-- Social Media Links -->
-        <div class="ms-auto mb-3 social-icons">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            class="me-2 text-black fs-4"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            class="me-2 text-black fs-4"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            class="me-2 text-black fs-4"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            class="me-2 text-black fs-4"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
-      </div>
-    </header>
-    <!-- news-options -->
-    <div class="nav-scroller">
-      <nav class="nav-container">
-        <a href="../index.html" class="nav-link">Home</a>
-        <a href="/news-types/world.html" class="nav-link">World News</a>
-        <a href="/news-types/business.html" class="nav-link">Business</a>
-        <a href="/news-types/sports.html" class="nav-link">Sports</a>
-        <a href="/news-types/entertainment.html" class="nav-link"
-          >Entertainment</a
-        >
-      </nav>
-    </div>
+    <!-- Header will be inserted here -->
+    <div id="header-placeholder"></div>
 
     <!-- Weather -->
     <div class="weat-slide" id="business-section1">
-      <div class="today-weath mt-2">
+      <div class="today-weath mt-2 mb-2">
         <p id="weather-info" class="hel">Loading weather...</p>
       </div>
     </div>
@@ -361,6 +309,7 @@
       </div>
     </div>
 
+    <script src="/comman-header/header.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
