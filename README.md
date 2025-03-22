@@ -8,6 +8,7 @@ The **Daily News Lens** is a dynamic web application that delivers the latest ne
 - ⛅ Provides **real-time weather updates** based on the user’s location.
 - 🎨 **Responsive design** using Bootstrap for seamless experience across devices.
 - 🔍 **Categorized news sections** (Business, Entertainment, Sports, World) for easy navigation.
+- 📌 **Common Header Implementation**: Uses a shared `header.html` and `header.js` for consistency across pages.
 
 ## 🛠️ Technologies Used
 - **Frontend**: HTML, CSS, Bootstrap
@@ -31,6 +32,9 @@ The **Daily News Lens** is a dynamic web application that delivers the latest ne
 │   ├── sports.html             # Sports News Page
 │   ├── world-news-types.js     # World News JS
 │   ├── world.html              # World News Page
+├── comman-section/             # Common reusable components
+│   ├── header.html             # Common Header File
+│   ├── header.js               # JavaScript for loading the common header
 ├── index.html                  # Main homepage
 ├── app.js                      # JavaScript file for fetching and displaying news
 ├── style.css                   # Stylesheet for UI styling
