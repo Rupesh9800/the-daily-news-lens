@@ -56,24 +56,20 @@ The **Daily News Lens** is a dynamic web application that delivers the latest ne
 ```
 
 ## 📸 Screenshots
-
-### 🏠 Home Page
-
-
-
-### 🏀 Sports News Page
-
-
-
-### 💼 Business News Page
-
-
-
-### 🎭 Entertainment News Page
-
-
-
-### 🌍 World News Page
+ ### 🏠 Home Page
+ ![Home Page](Screenshots/main-news%20screen.png)
+ 
+ ### 🏀 Sports News Page
+ ![Sports News](Screenshots/sport-news%20screen.png)
+ 
+ ### 💼 Business News Page
+ ![Business News](Screenshots/business-news%20screen.png)
+ 
+ ### 🎭 Entertainment News Page
+ ![Entertainment News](Screenshots/entertainment-news%20screen.png)
+ 
+ ### 🌍 World News Page
+ ![World News](Screenshots/world-news%20screen.png)
 
 
 
